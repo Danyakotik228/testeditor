@@ -20,6 +20,7 @@ void toupfirst(char *s) {
        if(isspace(s[i-1])){
     s[i] = toupper(s[i]);
   }
+  }
 }
 
 static void showupfirstt(int index, char *contents, int cursor, void *data);
