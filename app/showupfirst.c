@@ -17,7 +17,7 @@ void toupfirst(char *s) {
   int len = strlen(s);
   int i;
   for (i = 0; i < len; i++) {
-      
+       if(isspace(s[i-1])){
     s[i] = toupper(s[i]);
   }
 }
