@@ -41,12 +41,12 @@ static void showupfirstt(int index, char *contents, int cursor, void *data) {
   /* Капитализация символов после пробела */
   char line[MAXLINE];
   char output_line[MAXLINE];
-  strcpy(line, contents);
+  strncpy(line, contents);
 
   if (cursor >= 0) {
     strncpy(output_line, line, cursor);
     output_line[cursor] = '|';
-    strcpy(output_line + cursor + 1, line + cursor);
+    strncpy(output_line + cursor + 1, line + cursor);
     toupfirst(output_line);
     printf("%s", output_line);
     if (output_line[strlen(output_line) - 1] != '\n')
