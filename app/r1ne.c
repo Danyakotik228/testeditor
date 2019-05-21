@@ -27,7 +27,8 @@ void r1ne(text txt) {
 /* Проверяет наличие в строке буквы или цифры */
 int empty(char *str) {
   int len = strlen(str);
-  for (int i = 0; i < len; i++) {
+  int i;
+  for (i = 0; i < len; i++) {
       if ((isdigit(str[i])) || isalpha(str[i])) {
       return 1;
     }
