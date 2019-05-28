@@ -88,6 +88,7 @@ wwwww
 eeeee
 
 Функция showupfirst
+Переводит символы после пробела в верхний регистр
 
 Тест №1
 
@@ -96,7 +97,7 @@ eeeee
 Входные данные: 
 Hello friend!
 Ожидаемый результат: 
-HELLO FRIEND!
+Hello Friend!
 Описание процесса: 
 
 Тест №2
@@ -117,9 +118,9 @@ hello friend
 terve mies
 |
 Ожидаемый результат: 
-HELLO FRIEND
+hello Friend
 
-TERVE MIES
+terve Mies
 |
 Описание процесса: 
 
